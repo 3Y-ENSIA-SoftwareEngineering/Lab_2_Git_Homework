@@ -6,6 +6,7 @@ app = create_app()
 def index():
     return "Welcome to the Calculator API! Please enter your operation through the URL :URL/operation/number1/number2"
 
+#main function
 if __name__ == "__main__":
     print("Registered Routes:")
     for rule in app.url_map.iter_rules():
